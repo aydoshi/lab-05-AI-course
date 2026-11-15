@@ -41,7 +41,7 @@ Pick one question that the full harness (layer 3) still gets wrong or refuses. G
 the model do instead? Name one thing you would add to the harness, and what it would cost
 (extra model calls, tokens, time, or a new way to fail).
 
-q18. The calculation went wrong. Model calculated: tool   calculate({"expression": "(16.1 - 10.6)/100"}) -> ok: {"result":0.055}
+Answer: q18. The calculation went wrong. Model calculated: tool   calculate({"expression": "(16.1 - 10.6)/100"}) -> ok: {"result":0.055}
   model: ANSWER: 0.55 percentage points. after we see:   harness: Your answer is not supported by the tool results: the number 0.55 is not in any tool output. Use tool results; if the value comes from arithmetic, compute it with the calculate tool. If the data does 
 so i would add a layer that checks the final answer with the result of calculator.
 
@@ -53,7 +53,7 @@ indicator in one year". Would you ship the fixed workflow or the agent? Use the 
 number of model calls, the tokens and the time you measured in Part 1. Then say in one sentence
 what kind of question would make you choose the other one.
 
-I would choose fixed workflow, because its just better in any aspect: accuracy, token usage, model calls. But I would choose the agent for tasks when we need multiple steps or calculation and something like that
+Answer: I would choose fixed workflow, because its just better in any aspect: accuracy, token usage, model calls. But I would choose the agent for tasks when we need multiple steps or calculation and something like that
 
 Output from Colab->
 the 15 fixed-shape questions:
